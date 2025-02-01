@@ -1,9 +1,12 @@
 #=====================模块导入===================
-import sys,os
+import os
+import sys
+
 from PyQt5.QtGui import QIcon
-#[from PyQt5.QtCore import QCoreApplication,Qt]
+# [from PyQt5.QtCore import QCoreApplication,Qt]
 from PyQt5.QtWidgets import QApplication
 from qfluentwidgets import FluentIcon, SplitFluentWindow, NavigationItemPosition
+
 #=====================模块导入===================END
 
 #=====================环境变量===================
@@ -17,6 +20,7 @@ from Home import HomePage
 from Notice import  NoticePage
 from Story import StoryPage
 from Settings import SettingsPage
+from Forms import  FormsPage
 #=====================窗口导入===================END
 
 class Main(SplitFluentWindow):
@@ -31,6 +35,7 @@ class Main(SplitFluentWindow):
         self.NoticePage = NoticePage()
         self.StoryPage = StoryPage()
         self.SettingsPage = SettingsPage()
+        self.FormsPage = FormsPage()
 
         self.init_navigation()        # 初始化导航栏
         self.navigationInterface.setExpandWidth(280)  # 设置导航栏宽度
@@ -42,6 +47,7 @@ class Main(SplitFluentWindow):
         self.addSubInterface(self.NoticePage, FluentIcon.QUICK_NOTE, "公告")
         self.addSubInterface(self.StoryPage, FluentIcon.BOOK_SHELF, "剧情")
         self.addSubInterface(self.SettingsPage, FluentIcon.SETTING, "设置",NavigationItemPosition.BOTTOM)
+        self.addSubInterface(self.FormsPage, FluentIcon.FEEDBACK,"表单中心")
 
     def adjust_font(self):
         """动态调整字体大小"""

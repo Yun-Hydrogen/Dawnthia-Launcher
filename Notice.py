@@ -1,6 +1,4 @@
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import QWidget, QLabel, QVBoxLayout
-from qfluentwidgets import FluentIcon
+from PyQt5.QtWidgets import QWidget
 
 
 class NoticePage(QWidget):
