@@ -7,8 +7,6 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication
 from qfluentwidgets import FluentIcon, SplitFluentWindow, NavigationItemPosition
 
-#=====================模块导入===================END
-
 #=====================环境变量===================
 os.environ["QT_ENABLE_HIGHDPI_SCALING"] = "1"
 os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
@@ -30,6 +28,7 @@ class Main(SplitFluentWindow):
         self.setWindowIcon(QIcon("src/1.png"))
         self.dpi_scale = self.logicalDpiX() / 96.0
         self.setFixedSize(int(960 * self.dpi_scale), int(640 * self.dpi_scale))
+
         # 创建子页面
         self.HomePage = HomePage()
         self.NoticePage = NoticePage()
@@ -41,19 +40,22 @@ class Main(SplitFluentWindow):
         self.navigationInterface.setExpandWidth(280)  # 设置导航栏宽度
         self.navigationInterface.setAcrylicEnabled(True)  # 启用亚克力效果
 
-    #设置子页面跳转按钮
+        # 调整字体
+        self.adjust_font()
+
+    # 设置子页面跳转按钮
     def init_navigation(self):
         self.addSubInterface(self.HomePage, FluentIcon.HOME, "首页")
         self.addSubInterface(self.NoticePage, FluentIcon.QUICK_NOTE, "公告")
         self.addSubInterface(self.StoryPage, FluentIcon.BOOK_SHELF, "剧情")
-        self.addSubInterface(self.SettingsPage, FluentIcon.SETTING, "设置",NavigationItemPosition.BOTTOM)
-        self.addSubInterface(self.FormsPage, FluentIcon.FEEDBACK,"表单中心")
+        self.addSubInterface(self.SettingsPage, FluentIcon.SETTING, "设置", NavigationItemPosition.BOTTOM)
+        self.addSubInterface(self.FormsPage, FluentIcon.FEEDBACK, "表单中心")
 
     def adjust_font(self):
-        """动态调整字体大小"""
         font = self.font()
         font.setPixelSize(int(12 * self.dpi_scale))
         self.setFont(font)
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

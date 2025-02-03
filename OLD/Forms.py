@@ -30,6 +30,7 @@ class Ui_FormsPage(object):
         self.PassPortQRcode.setGeometry(QtCore.QRect(5, 50, 286, 391))
         self.PassPortQRcode.setPixmap(QtGui.QPixmap("src/PassPort-Application-Qrcode.png"))
         self.PassPortQRcode.setScaledContents(True)
+
         self.PassPortQRcode.setWordWrap(False)
         self.PassPortQRcode.setObjectName("PassPortQRcode")
         self.PassPortLinkButton = PrimaryPushButton(self.PassPortCard)
@@ -162,10 +163,6 @@ class Ui_FormsPage(object):
 
         self.retranslateUi(FormsPage)
         QtCore.QMetaObject.connectSlotsByName(FormsPage)
-
-        self.PassPortQRcode.update()
-        self.PixmapLabel_2.update()
-        self.PixmapLabel.update()
 
     def retranslateUi(self, FormsPage):
         _translate = QtCore.QCoreApplication.translate
