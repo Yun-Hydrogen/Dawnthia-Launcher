@@ -1,4 +1,4 @@
-import sys
+import sys,qfluentwidgets
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication
 from qfluentwidgets import FluentIcon, SplitFluentWindow
@@ -10,7 +10,8 @@ class DLLauncher(SplitFluentWindow):
         super().__init__()
         self.setWindowTitle("月梦初晓MC 启动器")
         self.setWindowIcon(QIcon("src/ICO.png"))
-
+        qfluentwidgets.setThemeColor("#66ccff")
+        
         #添加子页面
         self.FormsPage = FormsPage(self)
         self.addSubInterface(self.FormsPage, FluentIcon.FEEDBACK, "表单中心")
