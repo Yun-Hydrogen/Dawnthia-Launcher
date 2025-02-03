@@ -9,6 +9,7 @@ class FormsPage(QWidget, Ui_FormsPage):
     def __init__(self,parent=None):
         super().__init__(parent=parent)
         self.setupUi(self)
+        self.setObjectName("FormsPage")
         
         #设置图标
         self.PassPortButton.setIcon(FluentIcon.LINK)
