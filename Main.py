@@ -13,6 +13,7 @@ class DLLauncher(MSFluentWindow):
         self.setWindowIcon(QIcon("src/ICO.png"))
         qfluentwidgets.setThemeColor("#66ccff")
         self.setFixedSize(920, 540)
+        
         #添加子页面
         self.HomePage = HomePage(self)
         self.addSubInterface(self.HomePage, FluentIcon.HOME, "主页")
