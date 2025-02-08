@@ -103,7 +103,14 @@
        </property>
        <layout class="QGridLayout" name="PassPortQRCode_Grid">
         <item row="0" column="0">
-         <widget class="PixmapLabel" name="QRcode_PassPort"/>
+         <widget class="PixmapLabel" name="QRcode_PassPort">
+          <property name="pixmap">
+           <pixmap resource="FromsPage.qrc">:/IMG/src/PassPort-Application-Qrcode.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -275,7 +282,14 @@
        </property>
        <layout class="QGridLayout" name="MoreInfoQRCode_Gird">
         <item row="0" column="0">
-         <widget class="PixmapLabel" name="MoreInfo_QRcode"/>
+         <widget class="PixmapLabel" name="MoreInfo_QRcode">
+          <property name="pixmap">
+           <pixmap resource="FromsPage.qrc">:/IMG/src/MoreInfoQRcode.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -425,6 +439,9 @@
    <header>qfluentwidgets</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="FromsPage.qrc"/>
+  <include location="../src/FromsPage_src.qrc"/>
+ </resources>
  <connections/>
 </ui>

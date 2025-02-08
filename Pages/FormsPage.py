@@ -18,10 +18,6 @@ class FormsPage(QWidget, Ui_FormsPage):
         self.MoreInfoButton.setIcon(FluentIcon.LINK)
         self.ReportLinkButton.setIcon(FluentIcon.LINK)
 
-        #设置图片
-        self.QRcode_PassPort.setPixmap(QPixmap("src/PassPort-Application-Qrcode.png"))
-        self.MoreInfo_QRcode.setPixmap(QPixmap("src/MoreInfoQRcode.png"))
-
         #链接函数
         self.ReportLinkButton.clicked.connect(self.ReportLinkButton_Clicked)
         self.GithubButton.clicked.connect(self.GithubButton_Clicked)

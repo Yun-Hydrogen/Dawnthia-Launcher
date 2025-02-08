@@ -11,7 +11,7 @@ class DLLauncher(MSFluentWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("月梦初晓MC 启动器")
-        self.setWindowIcon(QIcon("src/ICO.png"))
+        self.setWindowIcon(QIcon("UIs/src/ICO.png"))
         qfluentwidgets.setThemeColor("#66ccff")
         self.setFixedSize(920, 540)
         self.setMicaEffectEnabled(False)
