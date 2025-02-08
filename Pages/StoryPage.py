@@ -1,7 +1,7 @@
 from PyQt5.QtCore import QUrl
 from PyQt5.QtWidgets import QVBoxLayout, QWidget
 from PyQt5.QtWebEngineWidgets import QWebEngineView
-from Ui_StoryPage import Ui_StoryPage
+from UIs.Ui_StoryPage import Ui_StoryPage
 from qfluentwidgets import MessageBox
 from PyQt5.QtGui import QDesktopServices
 

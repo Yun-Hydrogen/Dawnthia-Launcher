@@ -3,9 +3,9 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication
 from qfluentwidgets import FluentIcon, MSFluentWindow
 from  PyQt5.QtCore import Qt
-from FormsPage import FormsPage
-from HomePage import HomePage
-from StoryPage import StoryPage
+from Pages.FormsPage import FormsPage
+from Pages.HomePage import HomePage
+from Pages.StoryPage import StoryPage
 
 class DLLauncher(MSFluentWindow):
     def __init__(self):

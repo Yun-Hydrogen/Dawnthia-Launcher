@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import QWidget
-from  Ui_FormsPage import  Ui_FormsPage
+from  UIs.Ui_FormsPage import  Ui_FormsPage
 from qfluentwidgets import FluentIcon
 from PyQt5.QtGui import QPixmap, QDesktopServices
 from PyQt5.QtCore import QUrl
