@@ -6,6 +6,7 @@ from  PyQt5.QtCore import Qt
 from FormsPage import FormsPage
 from HomePage import HomePage
 from StoryPage import StoryPage
+
 class DLLauncher(MSFluentWindow):
     def __init__(self):
         super().__init__()
