@@ -28,14 +28,14 @@
   <widget class="LargeTitleLabel" name="LargeTitleLabel">
    <property name="geometry">
     <rect>
-     <x>45</x>
-     <y>50</y>
+     <x>35</x>
+     <y>15</y>
      <width>796</width>
-     <height>391</height>
+     <height>206</height>
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;你好~ヾ(≧▽≦*)o&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt;&quot;&gt;这里是&lt;/span&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;月梦初晓MC 启动器&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;这是主页balalala&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;（没想好放什么上去）&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt;月梦初晓MC 启动器&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;不知道放什么好~&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>

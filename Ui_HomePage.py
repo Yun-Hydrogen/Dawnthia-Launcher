@@ -18,7 +18,7 @@ class Ui_HomePage(object):
         Form.setMinimumSize(QtCore.QSize(860, 500))
         Form.setMaximumSize(QtCore.QSize(860, 500))
         self.LargeTitleLabel = LargeTitleLabel(Form)
-        self.LargeTitleLabel.setGeometry(QtCore.QRect(45, 50, 796, 391))
+        self.LargeTitleLabel.setGeometry(QtCore.QRect(35, 15, 796, 206))
         self.LargeTitleLabel.setObjectName("LargeTitleLabel")
 
         self.retranslateUi(Form)
@@ -27,5 +27,5 @@ class Ui_HomePage(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.LargeTitleLabel.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:36pt; font-weight:600;\">你好~ヾ(≧▽≦*)o</span></p><p><span style=\" font-size:36pt;\">这里是</span><span style=\" font-size:36pt; font-weight:600;\">月梦初晓MC 启动器</span></p><p><span style=\" font-size:36pt; font-weight:600;\">这是主页balalala</span></p><p><span style=\" font-size:36pt; font-weight:600;\">（没想好放什么上去）</span></p></body></html>"))
+        self.LargeTitleLabel.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:24pt; font-weight:600;\">月梦初晓MC 启动器</span></p><p><br/><span style=\" font-size:8pt;\">不知道放什么好~</span></p></body></html>"))
 from qfluentwidgets import LargeTitleLabel
