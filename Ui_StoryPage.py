@@ -30,11 +30,7 @@ class Ui_StoryPage(object):
         self.CaptionLabel.setFont(font)
         self.CaptionLabel.setObjectName("CaptionLabel")
         self.gridLayoutWidget = QtWidgets.QWidget(StoryPage)
-<<<<<<< HEAD
-        self.gridLayoutWidget.setGeometry(QtCore.QRect(15, 10, 826, 466))
-=======
         self.gridLayoutWidget.setGeometry(QtCore.QRect(15, 10, 826, 476))
->>>>>>> c6f3693bedfa3b66b9aed032bea98d8ed5840126
         self.gridLayoutWidget.setObjectName("gridLayoutWidget")
         self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
