@@ -1,11 +1,14 @@
 import sys,qfluentwidgets
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication
-from qfluentwidgets import FluentIcon, MSFluentWindow
+from qfluentwidgets import FluentIcon, MSFluentWindow,SingleDirectionScrollArea
 from  PyQt5.QtCore import Qt
+#导入子页面============================
 from Pages.FormsPage import FormsPage
 from Pages.HomePage import HomePage
 from Pages.StoryPage import StoryPage
+from Pages.ToolsPage import ToolsPage
+
 
 class DLLauncher(MSFluentWindow):
     def __init__(self):
@@ -23,6 +26,9 @@ class DLLauncher(MSFluentWindow):
         self.addSubInterface(self.FormsPage, FluentIcon.LABEL, "表单")
         self.StoryPage = StoryPage(self)
         self.addSubInterface(self.StoryPage, FluentIcon.BOOK_SHELF, "剧情")
+        self.ToolsPage = ToolsPage(self)
+        self.addSubInterface(self.ToolsPage, FluentIcon.DEVELOPER_TOOLS, "工具")
+
 
 if __name__ == "__main__":
     QApplication.setHighDpiScaleFactorRoundingPolicy(Qt.HighDpiScaleFactorRoundingPolicy.PassThrough)
