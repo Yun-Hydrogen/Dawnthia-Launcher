@@ -13,7 +13,7 @@ from Pages.ToolsPage import ToolsPage
 class DLLauncher(MSFluentWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("月梦初晓MC 启动器")
+        self.setWindowTitle("月梦初晓MC 中心")
         self.setWindowIcon(QIcon("UIs/src/ICO.png"))
         qfluentwidgets.setThemeColor("#66ccff")
         self.setFixedSize(920, 540)
