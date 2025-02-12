@@ -50,12 +50,17 @@ class Ui_Tools(object):
         self.BodyLabe_1.setWordWrap(True)
         self.BodyLabe_1.setObjectName("BodyLabe_1")
         self.PrimaryPushButton_1 = PrimaryPushButton(self.HeaderCardWidget_1)
-        self.PrimaryPushButton_1.setGeometry(QtCore.QRect(25, 120, 241, 32))
+        self.PrimaryPushButton_1.setGeometry(QtCore.QRect(5, 125, 191, 32))
         self.PrimaryPushButton_1.setProperty("hasIcon", True)
         self.PrimaryPushButton_1.setObjectName("PrimaryPushButton_1")
         self.TransparentToolButton_1 = TransparentToolButton(self.HeaderCardWidget_1)
         self.TransparentToolButton_1.setGeometry(QtCore.QRect(135, 10, 36, 30))
+        self.TransparentToolButton_1.setText("")
         self.TransparentToolButton_1.setObjectName("TransparentToolButton_1")
+        self.PushButton_1 = PushButton(self.HeaderCardWidget_1)
+        self.PushButton_1.setGeometry(QtCore.QRect(200, 125, 81, 32))
+        self.PushButton_1.setProperty("hasIcon", True)
+        self.PushButton_1.setObjectName("PushButton_1")
         self.gridLayout_1.addWidget(self.HeaderCardWidget_1, 0, 0, 1, 1)
 
         self.retranslateUi(Tools)
@@ -68,5 +73,6 @@ class Ui_Tools(object):
         self.WarningText.setText(_translate("Tools", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600;\">注意！</span><span style=\" font-size:12pt;\">使用工具前请先行查阅工作原理和其他资料 开发者不为此造成的后果任何责任！</span></p></body></html>"))
         self.HeaderCardWidget_1.setTitle(_translate("Tools", "浏览器卡屏修复"))
         self.BodyLabe_1.setText(_translate("Tools", "<html><head/><body><p>解决浏览器和基于chromium的应用页面切换时仍有一部分区域是上一页的残留（卡屏）</p></body></html>"))
-        self.PrimaryPushButton_1.setText(_translate("Tools", "修复(需要以管理员权限运行)"))
-from qfluentwidgets import BodyLabel, HeaderCardWidget, PrimaryPushButton, TransparentToolButton
+        self.PrimaryPushButton_1.setText(_translate("Tools", "修复(需要管理员权限)"))
+        self.PushButton_1.setText(_translate("Tools", "撤销"))
+from qfluentwidgets import BodyLabel, HeaderCardWidget, PrimaryPushButton, PushButton, TransparentToolButton

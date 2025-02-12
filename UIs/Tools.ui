@@ -109,14 +109,14 @@
       <widget class="PrimaryPushButton" name="PrimaryPushButton_1">
        <property name="geometry">
         <rect>
-         <x>25</x>
-         <y>120</y>
-         <width>241</width>
+         <x>5</x>
+         <y>125</y>
+         <width>191</width>
          <height>32</height>
         </rect>
        </property>
        <property name="text">
-        <string>修复(需要以管理员权限运行)</string>
+        <string>修复(需要管理员权限)</string>
        </property>
        <property name="hasIcon" stdset="0">
         <bool>true</bool>
@@ -130,6 +130,25 @@
          <width>36</width>
          <height>30</height>
         </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="PushButton" name="PushButton_1">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>125</y>
+         <width>81</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>撤销</string>
+       </property>
+       <property name="hasIcon" stdset="0">
+        <bool>true</bool>
        </property>
       </widget>
      </widget>
