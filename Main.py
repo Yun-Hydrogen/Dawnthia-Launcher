@@ -8,6 +8,7 @@ from Pages.FormsPage import FormsPage
 from Pages.HomePage import HomePage
 from Pages.StoryPage import StoryPage
 from Pages.ToolsPage import ToolsPage
+from Pages.HelpPage import HelpPage
 
 
 class DLLauncher(MSFluentWindow):
@@ -26,6 +27,8 @@ class DLLauncher(MSFluentWindow):
         self.addSubInterface(self.FormsPage, FluentIcon.LABEL, "表单")
         self.StoryPage = StoryPage(self)
         self.addSubInterface(self.StoryPage, FluentIcon.BOOK_SHELF, "剧情")
+        self.HelpPage = HelpPage(self)
+        self.addSubInterface(self.HelpPage, FluentIcon.HELP, "帮助")
         self.ToolsPage = ToolsPage(self)
         self.addSubInterface(self.ToolsPage, FluentIcon.DEVELOPER_TOOLS, "工具")
 
