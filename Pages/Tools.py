@@ -81,5 +81,5 @@ class Tools(QWidget, Ui_Tools):
         except subprocess.CalledProcessError as e:
             mb = MessageBox("操作未完成`(*>﹏<*)′", f"发生了错误：{e.stderr.strip()}", self.window())
             mb.yesButton.setText("这应该是我的问题ψ(._. )>")
-            mb.cancelButton.setText("这是萌萌氢的问题，我要惩罚萌萌氢（不要啊~ヽ(*。>Д<)o゜")
+            mb.cancelButton.setText("这是萌萌氢的问题，我要惩罚萌萌氢（不要啊~(*。>Д<)o゜")
             mb.exec()
