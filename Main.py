@@ -11,10 +11,10 @@ from Pages.ToolsPage import ToolsPage
 from Pages.HelpPage import HelpPage
 
 
-class DLLauncher(MSFluentWindow):
+class DawnthiaLauncher(MSFluentWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("月梦初晓MC 中心")
+        self.setWindowTitle("月梦初晓|Dawnthia 中心")
         self.setWindowIcon(QIcon("UIs/src/ICO.png"))
         qfluentwidgets.setThemeColor("#66ccff")
         self.setFixedSize(920, 540)
@@ -38,7 +38,7 @@ if __name__ == "__main__":
     QApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
     QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps)
     app = QApplication(sys.argv)
-    w = DLLauncher()
+    w = DawnthiaLauncher()
     w.show()
     app.exec_()
     
