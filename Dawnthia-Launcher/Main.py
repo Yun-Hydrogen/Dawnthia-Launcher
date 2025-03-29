@@ -9,6 +9,7 @@ sys.dont_write_bytecode = True
 from Pages.FormsPage import FormsPage
 from Pages.HomePage import HomePage
 from Pages.StoryPage import StoryPage
+
 from Pages.ToolsPage import ToolsPage
 from Pages.HelpPage import HelpPage
 from Config import color_theme
