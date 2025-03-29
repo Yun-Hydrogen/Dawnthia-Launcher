@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'e:\Program-Project\DreamingLight-Launcher\UIs\Tools.ui'
+# Form implementation generated from reading ui file 'e:\Document\Project\Dawnthia-Launcher\UIs\UIFILES\Tools.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -18,7 +18,7 @@ class Ui_Tools(object):
         Tools.setMinimumSize(QtCore.QSize(830, 830))
         Tools.setMaximumSize(QtCore.QSize(830, 830))
         self.gridLayoutWidget = QtWidgets.QWidget(Tools)
-        self.gridLayoutWidget.setGeometry(QtCore.QRect(5, 5, 816, 101))
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(10, 5, 811, 101))
         self.gridLayoutWidget.setObjectName("gridLayoutWidget")
         self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
@@ -37,7 +37,7 @@ class Ui_Tools(object):
         self.WarningText.setObjectName("WarningText")
         self.gridLayout.addWidget(self.TitleCard, 0, 0, 1, 1)
         self.gridLayoutWidget_2 = QtWidgets.QWidget(Tools)
-        self.gridLayoutWidget_2.setGeometry(QtCore.QRect(5, 115, 291, 166))
+        self.gridLayoutWidget_2.setGeometry(QtCore.QRect(10, 110, 391, 191))
         self.gridLayoutWidget_2.setObjectName("gridLayoutWidget_2")
         self.gridLayout_1 = QtWidgets.QGridLayout(self.gridLayoutWidget_2)
         self.gridLayout_1.setContentsMargins(0, 0, 0, 0)
@@ -45,12 +45,12 @@ class Ui_Tools(object):
         self.HeaderCardWidget_1 = HeaderCardWidget(self.gridLayoutWidget_2)
         self.HeaderCardWidget_1.setObjectName("HeaderCardWidget_1")
         self.BodyLabe_1 = BodyLabel(self.HeaderCardWidget_1)
-        self.BodyLabe_1.setGeometry(QtCore.QRect(10, 60, 276, 46))
+        self.BodyLabe_1.setGeometry(QtCore.QRect(10, 50, 341, 91))
         self.BodyLabe_1.setScaledContents(False)
         self.BodyLabe_1.setWordWrap(True)
         self.BodyLabe_1.setObjectName("BodyLabe_1")
         self.PrimaryPushButton_1 = PrimaryPushButton(self.HeaderCardWidget_1)
-        self.PrimaryPushButton_1.setGeometry(QtCore.QRect(5, 125, 191, 32))
+        self.PrimaryPushButton_1.setGeometry(QtCore.QRect(50, 150, 191, 32))
         self.PrimaryPushButton_1.setProperty("hasIcon", True)
         self.PrimaryPushButton_1.setObjectName("PrimaryPushButton_1")
         self.TransparentToolButton_1 = TransparentToolButton(self.HeaderCardWidget_1)
@@ -58,10 +58,10 @@ class Ui_Tools(object):
         self.TransparentToolButton_1.setText("")
         self.TransparentToolButton_1.setObjectName("TransparentToolButton_1")
         self.PushButton_1 = PushButton(self.HeaderCardWidget_1)
-        self.PushButton_1.setGeometry(QtCore.QRect(200, 125, 81, 32))
+        self.PushButton_1.setGeometry(QtCore.QRect(250, 150, 81, 32))
         self.PushButton_1.setProperty("hasIcon", True)
         self.PushButton_1.setObjectName("PushButton_1")
-        self.gridLayout_1.addWidget(self.HeaderCardWidget_1, 0, 0, 1, 1)
+        self.gridLayout_1.addWidget(self.HeaderCardWidget_1, 0, 1, 1, 1)
 
         self.retranslateUi(Tools)
         QtCore.QMetaObject.connectSlotsByName(Tools)
@@ -69,10 +69,10 @@ class Ui_Tools(object):
     def retranslateUi(self, Tools):
         _translate = QtCore.QCoreApplication.translate
         Tools.setWindowTitle(_translate("Tools", "Form"))
-        self.TitleCard.setTitle(_translate("Tools", "这里是小工具合集...... （萌萌氢写着玩哒！与启动器毫无关联(*￣3￣)╭"))
+        self.TitleCard.setTitle(_translate("Tools", "这里是小工具合集...... (写着玩哒！"))
         self.WarningText.setText(_translate("Tools", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600;\">注意！</span><span style=\" font-size:12pt;\">使用工具前请先行查阅工作原理和其他资料 开发者不为此造成的后果任何责任！</span></p></body></html>"))
         self.HeaderCardWidget_1.setTitle(_translate("Tools", "浏览器卡屏修复"))
-        self.BodyLabe_1.setText(_translate("Tools", "<html><head/><body><p>解决浏览器和基于chromium的应用页面切换时仍有一部分区域是上一页的残留（卡屏）</p></body></html>"))
+        self.BodyLabe_1.setText(_translate("Tools", "<html><head/><body><p><span style=\" font-size:10pt;\">解决浏览器和基于chromium的应用页面切换时仍有一部分区域是上一页的残留（卡屏）,也有可能可以解决Microsoft Word快速滑动导致的显示问题（存疑）</span></p><p><br/></p></body></html>"))
         self.PrimaryPushButton_1.setText(_translate("Tools", "修复(需要管理员权限)"))
         self.PushButton_1.setText(_translate("Tools", "撤销"))
 from qfluentwidgets import BodyLabel, HeaderCardWidget, PrimaryPushButton, PushButton, TransparentToolButton

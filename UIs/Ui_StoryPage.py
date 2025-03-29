@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'e:\Program-Project\DreamingLight-Launcher\UIs\StoryPage.ui'
+# Form implementation generated from reading ui file 'e:\Document\Project\Dawnthia-Launcher\UIs\StoryPage.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #

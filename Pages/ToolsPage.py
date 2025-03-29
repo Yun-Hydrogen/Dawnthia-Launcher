@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QSizePolicy
 from UIs.Ui_ToolsPage import Ui_ToolsPage
-from Pages.Tools import Tools
+from Pages.ToolsPage_Sub.Tools import Tools
 from PyQt5.QtCore import Qt
 from qfluentwidgets import InfoBar, InfoBarPosition
 

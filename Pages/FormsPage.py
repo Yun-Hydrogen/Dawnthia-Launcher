@@ -1,7 +1,7 @@
 from PyQt5.QtWidgets import QWidget
 from  UIs.Ui_FormsPage import  Ui_FormsPage
 from qfluentwidgets import FluentIcon
-from PyQt5.QtGui import QPixmap, QDesktopServices
+from PyQt5.QtGui import QDesktopServices
 from PyQt5.QtCore import QUrl
 from qfluentwidgets import MessageBox
 
@@ -39,7 +39,7 @@ class FormsPage(QWidget, Ui_FormsPage):
         MB.yesButton.setText("继续")
         MB.cancelButton.setText("取消")
         if MB.exec():
-            QDesktopServices.openUrl(QUrl("https://github.com/Yun-Hydrogen/DreamingLight-Launcher"))
+            QDesktopServices.openUrl(QUrl("https://github.com/Yun-Hydrogen/Dawnthia-Launcher"))
         else:
             pass
     
