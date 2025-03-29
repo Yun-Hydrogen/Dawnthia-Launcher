@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="IMG">
+    <file>src/PassPort-Application-Qrcode.png</file>
+    <file>src/MoreInfoQRcode.png</file>
+  </qresource>
+</RCC>
