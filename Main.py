@@ -1,7 +1,7 @@
 import sys,qfluentwidgets
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication
-from qfluentwidgets import FluentIcon, MSFluentWindow
+from qfluentwidgets import FluentIcon, MSFluentWindow, NavigationItemPosition
 from  PyQt5.QtCore import Qt
 import sys
 sys.dont_write_bytecode = True
@@ -9,7 +9,7 @@ sys.dont_write_bytecode = True
 from Pages.FormsPage import FormsPage
 from Pages.HomePage import HomePage
 from Pages.StoryPage import StoryPage
-
+from Pages.SettingsPage import SettingsPage
 from Pages.ToolsPage import ToolsPage
 from Pages.HelpPage import HelpPage
 from Config import color_theme
@@ -34,7 +34,8 @@ class DawnthiaLauncher(MSFluentWindow):
         self.addSubInterface(self.HelpPage, FluentIcon.HELP, "帮助")
         self.ToolsPage = ToolsPage(self)
         self.addSubInterface(self.ToolsPage, FluentIcon.DEVELOPER_TOOLS, "工具")
-
+        self.SettingsPage = SettingsPage(self)
+        self.addSubInterface(self.SettingsPage, FluentIcon.SETTING,"设置", position=NavigationItemPosition.BOTTOM)
 
 
 
