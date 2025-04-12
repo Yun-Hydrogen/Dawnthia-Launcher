@@ -12,16 +12,17 @@ from Pages.StoryPage import StoryPage
 from Pages.SettingsPage import SettingsPage
 from Pages.ToolsPage import ToolsPage
 from Pages.HelpPage import HelpPage
-from Config import color_theme
 
 class DawnthiaLauncher(MSFluentWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("月梦初晓|Dawnthia 中心")
         self.setWindowIcon(QIcon("UIs/src/ICO.png"))
-        qfluentwidgets.setThemeColor(color_theme)
         self.setFixedSize(920, 540)
         self.setMicaEffectEnabled(False)
+        from Config import color_theme
+        qfluentwidgets.setThemeColor(color_theme)
+        del color_theme
 
         #添加子页面
         self.HomePage = HomePage(self)
@@ -37,6 +38,11 @@ class DawnthiaLauncher(MSFluentWindow):
         self.SettingsPage = SettingsPage(self)
         self.addSubInterface(self.SettingsPage, FluentIcon.SETTING,"设置", position=NavigationItemPosition.BOTTOM)
 
+    def changeThemecolor(self):
+        from Config import color_theme
+        qfluentwidgets.setThemeColor(color_theme)
+        print("Color Change")
+        del color_theme
 
 
 if __name__ == "__main__":
