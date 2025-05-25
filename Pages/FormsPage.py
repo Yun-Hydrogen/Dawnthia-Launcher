@@ -18,7 +18,7 @@ class FormsPage(QWidget, Ui_FormsPage):
         self.MoreInfoButton.setIcon(FluentIcon.LINK)
         self.ReportLinkButton.setIcon(FluentIcon.LINK)
 
-        #链接函数
+        #信号连接
         self.ReportLinkButton.clicked.connect(self.ReportLinkButton_Clicked)
         self.GithubButton.clicked.connect(self.GithubButton_Clicked)
         self.PassPortButton.clicked.connect(self.PassPortButton_Clicked)

@@ -16,9 +16,8 @@ class HelpPage(QWidget,Ui_HelpPage):
         layout.setContentsMargins(0, 0, 0, 0)  # 去除边距
 
         # 创建浏览器控件
-        self.browser = QWebEngineView(self.gridLayoutWidget)  # 设置父控件为 gridLayoutWidget
-        self.gridLayout.addWidget(self.browser, 0, 0, 1, 1)  # 添加到 gridLayout 的第一行第一列
-
-        # 加载网页（注意URL格式）
+        self.browser = QWebEngineView(self.gridLayoutWidget)
+        self.gridLayout.addWidget(self.browser, 0, 0, 1, 1) 
+        # 加载网页
         self.browser.load(QUrl("https://docs.qq.com/smartsheet/DZk9WTURpdm5jSVR0?tab=sc_G4bBde")) 
         

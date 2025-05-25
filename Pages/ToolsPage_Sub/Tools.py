@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QWidget
 from UIs.Ui_Tools import Ui_Tools
-from qfluentwidgets import FluentIcon, TeachingTip, InfoBarIcon, MessageBox,PrimaryPushButton, PopupTeachingTip,TeachingTipView, TeachingTipTailPosition
+from qfluentwidgets import FluentIcon, TeachingTip, InfoBarIcon, MessageBox, PrimaryPushButton, PopupTeachingTip,TeachingTipView, TeachingTipTailPosition
 import subprocess
 from PyQt5.QtGui import QDesktopServices
 from PyQt5.QtCore import QUrl

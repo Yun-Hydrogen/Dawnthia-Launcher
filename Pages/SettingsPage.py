@@ -8,6 +8,6 @@ class SettingsPage(QWidget, Ui_SettingsPage):
         self.setupUi(self)
         
         # 创建滚动区域
-        self.SmoothScrollArea.setWidget(Settings(self))  # 设置内容部件
+        self.SmoothScrollArea.setWidget(Settings(self))
         self.SmoothScrollArea.setWidgetResizable(True)
         self.SmoothScrollArea.enableTransparentBackground()

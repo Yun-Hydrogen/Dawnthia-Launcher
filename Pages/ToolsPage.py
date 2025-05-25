@@ -12,7 +12,7 @@ class ToolsPage(QWidget, Ui_ToolsPage):
         self.setupUi(self)
         
         # 创建滚动区域
-        self.SmoothScrollArea.setWidget(Tools(self))  # 设置内容部件
+        self.SmoothScrollArea.setWidget(Tools(self))
         self.SmoothScrollArea.setWidgetResizable(True)
         self.SmoothScrollArea.enableTransparentBackground()
 

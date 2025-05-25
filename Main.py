@@ -1,4 +1,4 @@
-import sys,qfluentwidgets
+import qfluentwidgets
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication
 from qfluentwidgets import FluentIcon, MSFluentWindow, NavigationItemPosition
@@ -38,16 +38,11 @@ class DawnthiaLauncher(MSFluentWindow):
         self.SettingsPage = SettingsPage(self)
         self.addSubInterface(self.SettingsPage, FluentIcon.SETTING,"设置", position=NavigationItemPosition.BOTTOM)
 
-    def changeThemecolor(self):
-        from Config import color_theme
-        qfluentwidgets.setThemeColor(color_theme)
-        print("Color Change")
-        del color_theme
-
-
 if __name__ == "__main__":
     QApplication.setHighDpiScaleFactorRoundingPolicy(Qt.HighDpiScaleFactorRoundingPolicy.PassThrough)
+    # noinspection PyTypeChecker
     QApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
+    # noinspection PyTypeChecker
     QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps)
     app = QApplication(sys.argv)
     w = DawnthiaLauncher()
